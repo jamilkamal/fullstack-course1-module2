@@ -22,8 +22,8 @@ describe "lesson1" do
       expect(srcCode).not_to include("elsif")
     end
 
-    it "keep else clause" do
-      expect(srcCode).to include("else")
+    it "remove elsif clause" do
+      expect(srcCode).not_to include("elsif")
     end
 
     it "missing case" do
